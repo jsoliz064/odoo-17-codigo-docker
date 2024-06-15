@@ -47,7 +47,7 @@ docker-compose run --rm odoo /bin/bash -c "python -m venv venv && source venv/bi
 Crear DB Inicial:
 
 ```
-docker-compose run --rm odoo /bin/bash -c "source venv/bin/activate && python odoo-bin -c odoo.conf"
+docker-compose run --rm odoo /bin/bash -c "source venv/bin/activate && python odoo-bin -i base -c odoo.conf"
 ```
 
 Reinciar contenedor:
