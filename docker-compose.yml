@@ -7,11 +7,12 @@ services:
       dockerfile: Dockerfile
     container_name: odoo
     hostname: odoo
-    # restart: always
+    restart: always
     ports:
       - "${ODOO_PORT}:8069"
     volumes:
       - ./:/odoo
+      - ./odoo-data:/root/.local/share/Odoo/
     working_dir: /odoo
     # command: tail -f /dev/null
     command: >

@@ -53,3 +53,4 @@ venv
 /share/
 /src/
 db-data
+odoo-data
